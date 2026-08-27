@@ -7,12 +7,14 @@ function getExtension(fileName) {
 
 function getCategory(fileName) {
   const extension = getExtension(fileName);
-
   for (const [category, extensions] of Object.entries(CATEGORIES)) {
     if (extensions.includes(extension)) return category;
   }
-
   return DEFAULT_CATEGORY;
 }
 
-module.exports = { getExtension, getCategory };
+function isSupportedFile(fileName) {
+  return Boolean(getExtension(fileName));
+}
+
+module.exports = { getExtension, getCategory, isSupportedFile };
