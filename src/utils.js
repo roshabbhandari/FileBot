@@ -18,7 +18,7 @@ function isSupportedFile(fileName) {
 }
 
 function normalizeName(fileName) {
-  return fileName.trim();
+  return fileName.trim().replace(/\s+/g, ' ');
 }
 
 function isHidden(fileName) {
