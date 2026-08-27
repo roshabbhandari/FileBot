@@ -21,4 +21,8 @@ function normalizeName(fileName) {
   return fileName.trim();
 }
 
-module.exports = { getExtension, getCategory, isSupportedFile, normalizeName };
+function isHidden(fileName) {
+  return fileName.startsWith('.');
+}
+
+module.exports = { getExtension, getCategory, isSupportedFile, normalizeName, isHidden };
