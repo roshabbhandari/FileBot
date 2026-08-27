@@ -17,4 +17,8 @@ function isSupportedFile(fileName) {
   return Boolean(getExtension(fileName));
 }
 
-module.exports = { getExtension, getCategory, isSupportedFile };
+function normalizeName(fileName) {
+  return fileName.trim();
+}
+
+module.exports = { getExtension, getCategory, isSupportedFile, normalizeName };
