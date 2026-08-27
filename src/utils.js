@@ -25,4 +25,8 @@ function isHidden(fileName) {
   return fileName.startsWith('.');
 }
 
-module.exports = { getExtension, getCategory, isSupportedFile, normalizeName, isHidden };
+function isSamePath(a, b) {
+  return path.resolve(a) === path.resolve(b);
+}
+
+module.exports = { getExtension, getCategory, isSupportedFile, normalizeName, isHidden, isSamePath };
