@@ -1,5 +1,5 @@
 const CATEGORIES = Object.freeze({
-  Images: ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg'],
+  Images: ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg', '.bmp'],
   Videos: ['.mp4', '.mkv', '.mov', '.avi', '.webm'],
   Audio: ['.mp3', '.wav', '.flac', '.aac', '.ogg'],
   Documents: ['.pdf', '.doc', '.docx', '.txt', '.rtf'],
