@@ -27,3 +27,5 @@ async function organize(source, options = {}) {
 }
 
 module.exports = { organize };
+
+export function organizeOptions(source, options = {}) { return organize(source, options); }
